@@ -1,0 +1,17 @@
+IF NOT EXISTS (SELECT 1 FROM sys.schemas
+WHERE name = 'Estado')
+BEGIN
+	EXEC ('CREATE SCHEMA Estado') -- ESQUEMAS 
+END
+
+IF NOT EXISTS (SELECT 1 FROM sys.schemas
+WHERE name = 'Prioridad')
+BEGIN
+	EXEC ('CREATE SCHEMA Prioridad')
+END
+
+IF NOT EXISTS (SELECT 1 FROM sys.schemas
+WHERE name = 'Tarea')
+BEGIN
+	EXEC ('CREATE SCHEMA Tarea')
+END
